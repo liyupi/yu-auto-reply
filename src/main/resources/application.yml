@@ -24,11 +24,12 @@ zsxq:
   silenced: ${ZSXQ_SILENCED:true}
 # 任务配置
 task:
+  # 任务列表，支持配置多个
   list:
-    - name: task1
-      monitor: zsxq
-      answerer: openai
-      cron: '0/30 * * * * ?'
+    - name: task1 #任务名
+      monitor: zsxq #监控者
+      answerer: openai #回答者
+      cron: '0/30 * * * * ?' #执行周期
 #    - name: task2
 #      monitor: default
 #      answerer: default
