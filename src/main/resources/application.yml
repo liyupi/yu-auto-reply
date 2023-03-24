@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: yu-auto-reply
+  # 支持 swagger3
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+server:
+  address: 0.0.0.0
+  port: 8080
+  servlet:
+    context-path: /api
+# openAI 配置
+# https://platform.openai.com/docs/api-reference
+openai:
+  model: ${OPENAI_MODEL:text-davinci-003}
+  apiKey: ${OPENAI_API_KEY:你的apiKey}
+# 知识星球配置
+# https://zsxq.com/
+zsxq:
+  cookie: ${ZSXQ_COOKIE:你的星球cookie}
+  groupId: ${ZSXQ_GROUP_ID:你的星球id}
+  # 是否提醒提问者
+  silenced: ${ZSXQ_SILENCED:true}
+# 任务配置
+task:
+  list:
+    - name: task1
+      monitor: zsxq
+      answerer: openai
+      cron: '0/30 * * * * ?'
+#    - name: task2
+#      monitor: default
+#      answerer: default
+#      cron: '0/10 * * * * ?'

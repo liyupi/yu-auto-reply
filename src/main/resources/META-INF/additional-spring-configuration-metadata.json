@@ -1,0 +1,39 @@
+{
+  "properties": [
+    {
+      "name": "openai.apiKey",
+      "type": "java.lang.String",
+      "description": "Description for openai.apiKey."
+    },
+    {
+      "name": "zsxq.cookie",
+      "type": "java.lang.String",
+      "description": "Description for zsxq.cookie."
+    },
+    {
+      "name": "openai.model",
+      "type": "java.lang.String",
+      "description": "Description for openai.model."
+    },
+    {
+      "name": "zsxq.groupId",
+      "type": "java.lang.String",
+      "description": "Description for zsxq.groupId."
+    },
+    {
+      "name": "zsxq.silenced",
+      "type": "java.lang.String",
+      "description": "Description for zsxq.silenced."
+    },
+    {
+      "name": "task.cron",
+      "type": "java.lang.String",
+      "description": "Description for task.cron."
+    },
+    {
+      "name": "task.list",
+      "type": "java.lang.String",
+      "description": "Description for task.list."
+    }
+  ]
+}
