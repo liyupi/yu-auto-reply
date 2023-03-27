@@ -34,6 +34,16 @@
       "name": "task.list",
       "type": "java.lang.String",
       "description": "Description for task.list."
+    },
+    {
+      "name": "task.concurrent.enable",
+      "type": "java.lang.String",
+      "description": "Description for task.concurrent.enable."
+    },
+    {
+      "name": "task.concurrent.size",
+      "type": "java.lang.String",
+      "description": "Description for task.concurrent.size."
     }
   ]
 }
